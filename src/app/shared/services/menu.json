@@ -1,0 +1,12 @@
+[
+  {
+    "idMenu" : 1,
+    "titleMenu": "Ingresar",
+    "linkMenu" : "/login"
+  },
+  {
+    "idMenu" : 1,
+    "titleMenu": "Registrarse",
+    "linkMenu" : "/register"
+  }
+]

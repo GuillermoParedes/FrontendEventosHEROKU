@@ -1,0 +1,33 @@
+.containerItemCarousel {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  .marcoContainerItem {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+  }
+}
+.btn-left {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translate(0, -80%);
+}
+.btn-right {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translate(0, -80%);
+}
+

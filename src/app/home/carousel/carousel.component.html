@@ -1,0 +1,16 @@
+<ngx-carousel
+[inputs]="carouselOne"
+(carouselLoad)="myfunc($event)">
+  <ngx-item NgxCarouselItem *ngFor="let item of dates;let idx=index" >
+    <div class="clickItem containerItemCarousel" [attr.id]="idx">
+      <div class="marcoContainerItem">
+        <h3>{{item.date}}</h3>
+        <h6>{{item.day}}</h6>
+        <button (click)='selectItem(item)' class="btn btn-info">{{item.hour}}</button>
+      </div>
+    </div>
+  </ngx-item>
+  <button NgxCarouselPrev class='leftRs btn-left'>&lt;</button>
+  <button NgxCarouselNext class='rightRs btn-right'>&gt;</button>
+</ngx-carousel>
+

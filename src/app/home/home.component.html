@@ -1,0 +1,145 @@
+<div class="home-page">
+  <div class="row banner">
+    <div class="row w100-375">
+      <h2 class="titleEvent">{{titleEvent}}</h2><br>
+      <span class="subTitleEvent">
+      <i class="fa fa-television iconEvent" aria-hidden="true"></i>
+      <h6 class="contentEvent">{{typeEvent}}</h6>
+    </span>
+    </div>
+  </div>
+</div>
+<div class="containerBuyEvent">
+  <div class="card" style="width: 20rem;">
+    <img class="card-img-top picEvent" src="./../../assets/img/pictureEvent.jpg" alt="Card image cap">
+    <div class="card-body">
+      <button type="button" class="btn btn-warning btn-lg btn-block btn-buy-float">{{textBuyTickets}}</button>
+    </div>
+  </div>
+  <div class="containerBtnBuy">
+    <div class="row">
+      <div class="{{classOrganizador}}" [hidden]="!organizadoBool">
+        <button type="button" class="btn btn-info btn-lg btn-block">
+          {{textOrganization}}
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class={{classLugar}} [hidden]="!lugarBool">
+        <button type="button" class="btn btn-info btn-lg btn-block">
+          <i class="fa fa-map-o" aria-hidden="true"></i>
+          {{textUbication}}
+        </button>
+      </div>
+      <div class={{classButacas}} [hidden]="!butacasBool">
+        <button type="button" class="btn btn-info btn-lg btn-block">
+          <i class="fa fa-wheelchair" aria-hidden="true"></i>
+          {{textButacas}}
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class={{classBrochure}} [hidden]="!brochureBool">
+        <button type="button" class="btn btn-info btn-lg btn-block">
+          <i class="fa fa-file-o" aria-hidden="true"></i>
+          {{textBrochure}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dataEvents">
+  <div class="row w100-375">
+    <div class="col-8 containerDetailEvent">
+      <div class="col-4 detailEvent">
+        <span><i class="fa fa-calendar" aria-hidden="true"></i><h6>{{dateEvent}}</h6></span>
+      </div>
+      <div class="col-3 detailEvent">
+        <span><i class="fa fa-clock-o" aria-hidden="true"></i><h6>{{hourEvent}}</h6></span>
+      </div>
+      <div class="col-3 detailEvent">
+        <span><i class="fa fa-ticket" aria-hidden="true"></i><h6>{{pricingEvent}}</h6></span>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+<div class="informationEvent">
+  <div class="row w100-375">
+    <div class="col-7 containerInformation">
+      <h3>{{textSectionInfo}}</h3>
+      <p>{{contentInfoA}}</p>
+      <p class="collapse" id="collapseExample">{{contentInfoB}}</p>
+      <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Leer mas....
+      </a>
+      <div class="socialMediaEvents">
+        <a href={{socialFacebook}}>
+          <img src="./../../assets/img/social/facebook.png" alt="">
+        </a>
+        <a href={{socialTwitter}}>
+          <img src="./../../assets/img/social/twitter.png" alt="">
+        </a>
+        <a href={{socialInstagram}}>
+          <img src="./../../assets/img/social/instagram.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+<div class="buyTickets">
+  <div class="row w100-375">
+    <div class="col-12">
+      <h3>{{textSectionBuyTicket}}</h3>
+      <h6>{{subTextSectionBuyTicket}}</h6>
+    </div>
+  </div>
+  <div class="row w100-375">
+    <div class="col-6 containerCarousel">
+      <carousel [dates]="dates" (select)="onSelectDate($event)"></carousel>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h6>Has seleccionado</h6>
+      <div class="containerDetailBuy">
+        <div class="row">
+          <div class="col-5 containerDetailDateEvent text-center">
+            <h2>{{dateSelect.date}}</h2>
+            <h5>{{dateSelect.day}}</h5>
+            <h5>{{dateSelect.hour}}</h5>
+          </div>
+          <div class="col-7 containerDetailBuyEvent">
+            <h6>{{titleEvent}}</h6>
+            <h6>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              {{ubicationEvent}}</h6>
+            <h6>{{pricingEvent}}</h6>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-warning btn-buy">COMPRAR</button>
+    </div>
+  </div>
+</div>
+<div class="otherEvents">
+  <div  class="row w100-375">
+    <h2 class="titleOtherEvent">Eventos de tu Interes</h2>
+  </div>
+  <div  class="row w100-375">
+    <div class="col-6 otherEvent" *ngFor="let event of listEvents;">
+      <div class="row">
+        <div class="col-7 picEventOther">
+          <img class="card-img"  src="{{event.pic}}">
+        </div>
+        <div class="col-5 detailEventOther">
+          <h6 class="card-title">{{event.name}}</h6>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+            {{event.locale}}</p>
+          <p><i class="fa fa-calendar" aria-hidden="true"></i>{{event.date}}</p>
+          <span class="text-right">{{event.pricing}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

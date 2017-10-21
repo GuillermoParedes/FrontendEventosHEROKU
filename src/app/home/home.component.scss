@@ -1,0 +1,184 @@
+.home-page {
+  background-image: url("./../../assets/img/wallpaperEvent.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+  margin-top: -56px;
+  width: 100%;
+  z-index:1;
+  overflow: hidden;
+  .banner {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    .titleEvent {
+      margin-bottom: 0px;
+      width:100%;
+    }
+    .subTitleEvent {
+      .iconEvent, .contentEvent {
+        display: inline-block;
+      }
+    }
+  }
+  .nav-link {
+    cursor:pointer;
+  }
+}
+
+.dataEvents {
+  background: #f3f3f3;
+  position: relative;
+  overflow: hidden;
+  height:110px;
+  display: flex;
+  .containerDetailEvent {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    .detailEvent {
+      display: inline-block;
+      text-align: left;
+      height: 50px;
+      padding:0;
+      span {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        i, h6 {
+          display: inline;
+        }
+        h6 {
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+  }
+}
+.containerBuyEvent {
+  position: absolute;
+  top: 225px;
+  z-index: 5;
+  right: 390px;
+  width: 370px;
+  padding: 0;
+  .btn-buy-float {
+    height:72px;
+  }
+  .card {
+    margin:0;
+    width: 100% !important;
+    border:none !important;
+    .picEvent {
+      width: 100%;
+      height:380px;
+      border:none !important;
+    }
+    .card-body {
+      width: 100%;
+
+    }
+  }
+}
+.containerBtnBuy {
+  margin-top: 0;
+  width: 100%;
+  padding: 15px;
+  .btn-full {
+    margin:0;
+    padding:0;
+    display: block;
+    border: 1px solid #fff;
+    .btn {
+      border-radius: 0;
+    }
+  }
+  .btn-fifty {
+    display: inline;
+    margin:0;
+    padding:0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    .btn {
+      border-radius: 0;
+    }
+  }
+}
+.informationEvent {
+  padding: 15px 0;
+  .containerInformation {
+    .socialMediaEvents {
+      img {
+        width: 35px;
+        height: auto;
+        margin: 5px;
+      }
+    }
+  }
+}
+.buyTickets {
+  background: #f3f3f3;
+  overflow: hidden;
+  padding: 15px 0;
+  .containerDetailBuy {
+    border: 1px solid;
+    padding: 22px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    .containerDetailDateEvent {
+      h2, h5 {
+        margin: 0;
+      }
+    }
+    .containerDetailBuyEvent {
+      border-left:2px solid;
+    }
+
+  }
+  .btn-buy {
+    text-align: right;
+    position: absolute;
+    right: 12px;
+    //bottom: 16px;
+    margin-top: 5px;
+  }
+  .containerCarousel {
+    padding-left:35px;
+  }
+}
+.otherEvents {
+  overflow: hidden;
+  padding: 15px 0;
+  .titleOtherEvent {
+    padding: 15px;
+  }
+  .otherEvent {
+    margin-bottom: 10px;
+    .picEventOther {
+      img {
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+      }
+      .detailEventOther {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+.w100-375 {
+  width: calc(100% - 750px);
+  margin: 0 auto;
+  padding:0;
+  position: relative;
+}

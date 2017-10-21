@@ -1,0 +1,25 @@
+.navbar {
+  background: transparent;
+  position: relative;
+  z-index:5;
+  .logoApp {
+    position: relative;
+    color: #fff;
+  }
+  ul {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    a {
+      color: #fff;
+    }
+  }
+}
+.w100-375 {
+  width: calc(100% - 750px);
+  //border:1px solid;
+  margin: 0 auto;
+  padding:0;
+  position: relative;
+}
+
