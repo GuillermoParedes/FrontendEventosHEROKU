@@ -1,0 +1,18 @@
+$OpenSansRegular: 'Open Sans Regular', sans-serif;
+$OpenSansLight: 'Open Sans Light', sans-serif;
+$LatoLight: 'Lato Light', sans-serif;
+$TimesNew: 'Times New Roman', sans-serif;
+
+
+.texto-os-regular {
+  font-family: $OpenSansRegular !important;
+}
+.texto-os-light {
+  font-family: $OpenSansLight !important;
+}
+.texto-lt {
+  font-family: $LatoLight !important;
+}
+.texto-tnr {
+  font-family: $TimesNew !important;
+}

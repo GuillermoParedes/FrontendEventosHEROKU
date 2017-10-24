@@ -1,10 +1,12 @@
+@import "./../themes/colors";
+@import "./../themes/utils";
 .home-page {
   background-image: url("./../../assets/img/wallpaperEvent.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
   position: relative;
-  margin-top: -56px;
+  margin-top: -86px;
   width: 100%;
   z-index:1;
   overflow: hidden;
@@ -21,6 +23,7 @@
     }
     .subTitleEvent {
       .iconEvent, .contentEvent {
+        font-weight: 900;
         display: inline-block;
       }
     }
@@ -31,7 +34,6 @@
 }
 
 .dataEvents {
-  background: #f3f3f3;
   position: relative;
   overflow: hidden;
   height:110px;
@@ -52,10 +54,12 @@
         height: 100%;
         align-items: center;
         i, h6 {
+          font-size: 18px;
           display: inline;
         }
         h6 {
-          margin: 0 0 0 15px;
+          margin: 0 0 0 25px;
+          font-weight: 800;
         }
       }
     }
@@ -90,6 +94,13 @@
   margin-top: 0;
   width: 100%;
   padding: 15px;
+  .btn-organization {
+    height:auto;
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    min-height: 80px;
+  }
   .btn-full {
     margin:0;
     padding:0;
@@ -97,6 +108,12 @@
     border: 1px solid #fff;
     .btn {
       border-radius: 0;
+    }
+  }
+  .btn-info {
+    border: none !important;
+    &:active {
+      border: none !important;
     }
   }
   .btn-fifty {
@@ -112,20 +129,41 @@
 }
 .informationEvent {
   padding: 15px 0;
-  .containerInformation {
-    .socialMediaEvents {
-      img {
-        width: 35px;
-        height: auto;
-        margin: 5px;
+  height:600px;
+  display: flex;
+  .w100-375 {
+    .containerInformation {
+      margin-top: 50px;
+      .seeMore {
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        i {
+          font-size: 20px;
+        }
+      }
+      .socialMediaEvents {
+        position: absolute;
+        bottom:0;
+        img {
+          width: 35px;
+          height: auto;
+          margin: 5px;
+        }
       }
     }
   }
 }
 .buyTickets {
-  background: #f3f3f3;
   overflow: hidden;
   padding: 15px 0;
+  height: 450px;
+  display: flex;
+  .cheightCarousel {
+    top:-35px;
+    height:285px;
+  }
   .containerDetailBuy {
     border: 1px solid;
     padding: 22px;
@@ -150,7 +188,7 @@
     margin-top: 5px;
   }
   .containerCarousel {
-    padding-left:35px;
+    padding: 20px 35px;
   }
 }
 .otherEvents {

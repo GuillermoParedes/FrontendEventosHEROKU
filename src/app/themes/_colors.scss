@@ -1,0 +1,63 @@
+$ColorLila: #28356e;
+$ColorAzul: #304b73;
+$ColorCeleste: #00FFFF;
+/*#73cbc1;*/
+$ColorNegroAzulado: #373a42;
+$ColorGris: #6a6a6a;
+$ColorPlomo: #918f95;
+$ColorCasiBlanco: #f9f9f9;
+$colorPlomoClaro: #EEEEF4;
+
+$colorAzulPastel: #234376;
+.texto-lila {
+  color: $ColorLila !important;
+}
+.texto-azul {
+  color: $ColorAzul;
+}
+.texto-celeste {
+  color: $ColorCeleste;
+}
+.texto-negro-azulado {
+  color: $ColorNegroAzulado;
+}
+.texto-gris {
+  color: $ColorGris;
+}
+.texto-plomo{
+  color: $ColorPlomo;
+}
+.texto-casi-blanco{
+  color: $ColorCasiBlanco;
+}
+
+
+.fondo-lila {
+  background-color: $ColorLila !important;
+}
+.fondo-azul {
+  background-color: $ColorAzul;
+}
+.fondo-celeste {
+  background-color: $ColorCeleste;
+}
+.fondo-negro-azulado {
+  background-color: $ColorNegroAzulado;
+}
+.fondo-gris {
+  background-color: $ColorGris;
+}
+.fondo-plomo{
+  background-color: $ColorPlomo;
+}
+.fondo-casi-blanco{
+  background-color: $ColorCasiBlanco;
+}
+
+.fondo-plomo-claro{
+  background-color: $colorPlomoClaro;
+}
+
+.fondo-azul-pastel{
+  background-color: $colorAzulPastel;
+}

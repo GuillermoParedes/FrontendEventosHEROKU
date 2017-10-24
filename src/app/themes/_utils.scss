@@ -1,0 +1,29 @@
+.texto-izquierda {
+  text-align: left;
+}
+
+.texto-derecha {
+  text-align: right;
+}
+.text-centro {
+  text-align: center;
+}
+.texto-justificado {
+  text-align: justify;
+}
+
+
+.fondo-blanco {
+  background: #fff;
+}
+
+
+.centrado-vertical {
+  display: flex;
+  align-items: center;
+  margin:0 auto;
+}
+
+.sp {
+  padding:0;
+}

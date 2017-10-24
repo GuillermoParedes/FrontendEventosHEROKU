@@ -3,6 +3,9 @@
 @import "./assets/lib/bootstrap/css/bootstrap.min.css";
 @import "./assets/lib/fontawesome/css/font-awesome.min.css";
 @import "./app/themes/_base.scss";
+@import "./app/themes/_colors.scss";
+@import "./app/themes/_fonts.scss";
+@import "./app/themes/_mixins.scss";
 
 .displayInline {
   display: inline;

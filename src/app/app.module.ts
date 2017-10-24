@@ -23,8 +23,6 @@ import {
   UserService,
   HeaderEventComponent
 } from './shared';
-// Import your library
-import { OwlModule } from 'ngx-owl-carousel';
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
 @NgModule({
@@ -43,8 +41,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     ProfileModule,
     rootRouting,
     SharedModule,
-    SettingsModule,
-    OwlModule
+    SettingsModule
   ],
   providers: [
     ApiService,

@@ -48,18 +48,18 @@ export class HomeComponent implements OnInit{
     private tagsService: TagsService,
     private userService: UserService
   ) {
-    this.titleEvent = 'La Paz Expone 2018';
+    this.titleEvent = 'FESTIVAL DE VINOS, SINGANIS Y SABORES';
     this.typeEvent = 'Exposicion';
     this.ubicationEvent = 'Campo Ferial Chuquiago marka';
     this.dateEvent = '15 de Octubre';
     this.hourEvent = '22:50 hrs.';
     this.pricingEvent = 'Bs. 30';
-    this.textBuyTickets = 'Comprar Entradas';
+    this.textBuyTickets = 'COMPRAR';
     this.textOrganization = 'Organizado por...';
     this.textUbication = 'Lugar';
     this.textButacas = 'Butacas';
     this.textBrochure = 'Descarga el brochure';
-    this.textSectionInfo = 'Información';
+    this.textSectionInfo = 'INFORMACION';
     this.contentInfoA = ' !!!!!test text... Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on\n' + ' ' +
       '       it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter\n' +
       '        that shakes when you put quarters in it? No? Well, that\'s what you see at a toy store. And you must think you\'re\n' +
@@ -73,11 +73,11 @@ export class HomeComponent implements OnInit{
     this.textSectionBuyTicket = 'Compra tu Entrada';
     this.subTextSectionBuyTicket = 'Selecciona la Fecha y compra una entrada';
     this.listEvents = this.getListevents()
-    this.butacas = false;
+    this.butacas = true;
     this.organizadoBool = true;
     this.lugarBool = true;
     this.brochureBool = true;
-    this.butacasBool = false;
+    this.butacasBool = true;
     this.classButacas = 'col-12 btn-full'
     this.classBrochure = 'col-12 btn-full'
     this.classLugar = 'col-12 btn-full'

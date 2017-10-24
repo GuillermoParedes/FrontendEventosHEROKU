@@ -3,21 +3,23 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand logoApp" routerLink="/">{{nameProject}}</a>
+    <a class="navbar-brand logoApp" routerLink="/">
+      <img class="imgLogoApp" src="./../../../assets/img/logo.png" alt="{{nameProject}}">
+    </a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link"
+          <a class="nav-link texto-os-light"
              routerLink="/login"
              routerLinkActive="active">
-            Ingresar
+            ENTRAR
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"
+          <a class="nav-link texto-os-light"
              routerLink="/register"
              routerLinkActive="active">
-            Registrarse
+            REGISTRARSE
           </a>
         </li>
         <li class="nav-item">
