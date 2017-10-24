@@ -1,0 +1,44 @@
+/* $mini-mobile: 30em;
+$mobile:      40em;
+$phablet:     52.5em;
+$tablet:      64em;
+$laptop:      90em;
+$desktop:     120em;
+*/
+$mini-mobile: 480px ;
+$mobile:      640px;
+$phablet:     840px ;
+$tablet:      1024px ;
+$laptop:      1440px ;
+$desktop:     1900px ;
+@mixin orientacion($pTipo) {
+  @if $pTipo == 'Landscape' {
+    @media (orientation: $pTipo) { @content ; }
+  }
+  @if $pTipo == 'Portrait' {
+    @media (orientation: $pTipo) { @content ; }
+  }
+}
+@mixin responsivo($point) {
+  @if $point == tv {
+    @media screen and  (min-width: $desktop + 1px) { @content ; }
+  }
+  @if $point == desktop {
+    @media screen and  (min-width: $laptop + 1px) { @content ; }
+  }
+  @else if $point == laptop {
+    @media screen and  (min-width: $tablet + 1px ) { @content ; }
+  }
+  @else if $point == tablet {
+    @media screen and  (min-width: $phablet + 1px) { @content ; }
+  }
+  @else if $point == phablet {
+    @media screen and  (min-width: $mobile + 1px) { @content ; }
+  }
+  @else if $point == mobile {
+    @media screen and  (min-width: $mini-mobile + 1px) { @content ; }
+  }
+  @else if $point == mini-mobile {
+    @media screen and (max-width: $mini-mobile)  { @content ; }
+  }
+}

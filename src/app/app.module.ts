@@ -20,8 +20,7 @@ import {
   ProfilesService,
   SharedModule,
   TagsService,
-  UserService,
-  HeaderEventComponent
+  UserService
 } from './shared';
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
@@ -29,8 +28,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
-    HeaderEventComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

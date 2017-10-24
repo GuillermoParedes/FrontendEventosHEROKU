@@ -1,6 +1,12 @@
 @import "./../themes/colors";
 @import "./../themes/utils";
+@import "./../themes/mixins";
+.containerHomePage {
+  width: 100%;
+  height:100%;
+}
 .home-page {
+  padding: 0 370px;
   background-image: url("./../../assets/img/wallpaperEvent.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,6 +23,9 @@
     padding: 2rem;
     margin-bottom: 2rem;
     width: 100%;
+    @include responsivo('phablet'){
+      bottom: 80px;
+    }
     .titleEvent {
       margin-bottom: 0px;
       width:100%;
@@ -34,6 +43,7 @@
 }
 
 .dataEvents {
+  padding:0 370px;
   position: relative;
   overflow: hidden;
   height:110px;
@@ -66,12 +76,19 @@
   }
 }
 .containerBuyEvent {
+
   position: absolute;
   top: 225px;
   z-index: 5;
   right: 390px;
-  width: 370px;
+  width: 300px;
   padding: 0;
+  @include responsivo('phablet') {
+    right: 370px;
+  }
+  @include responsivo('mobile') {
+    right: 380px;
+  }
   .btn-buy-float {
     height:72px;
   }
@@ -81,7 +98,7 @@
     border:none !important;
     .picEvent {
       width: 100%;
-      height:380px;
+      height:280px;
       border:none !important;
     }
     .card-body {
@@ -128,7 +145,7 @@
   }
 }
 .informationEvent {
-  padding: 15px 0;
+  padding: 15px 370px;
   height:600px;
   display: flex;
   .w100-375 {
@@ -157,9 +174,12 @@
 }
 .buyTickets {
   overflow: hidden;
-  padding: 15px 0;
+  padding: 15px 370px;
   height: 450px;
   display: flex;
+  @include responsivo('phablet'){
+    display: block;
+  }
   .cheightCarousel {
     top:-35px;
     height:285px;
@@ -193,7 +213,7 @@
 }
 .otherEvents {
   overflow: hidden;
-  padding: 15px 0;
+  padding: 15px 370px;
   .titleOtherEvent {
     padding: 15px;
   }
@@ -215,8 +235,18 @@
 
 
 .w100-375 {
-  width: calc(100% - 750px);
+  //width: calc(100% - 750px);
+  width: 100%;
   margin: 0 auto;
   padding:0;
   position: relative;
+  @include responsivo('phablet'){
+    //width: 100%;
+  }
+  @include responsivo('mobile'){
+    //width: 100%;
+  }
+  @include responsivo('mini-mobile'){
+    width: 100%;
+  }
 }

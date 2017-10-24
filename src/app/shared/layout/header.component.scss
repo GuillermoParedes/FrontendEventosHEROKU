@@ -1,9 +1,11 @@
 @import "./../../themes/colors";
 @import "./../../themes/fonts";
+@import "./../../themes/mixins";
 .navbar {
   background: transparent;
   position: relative;
   z-index:5;
+  padding:0 370px;
   .logoApp {
     position: relative;
     color: #fff;
@@ -16,6 +18,9 @@
     position: absolute;
     top: 10px;
     right: 0;
+    @include responsivo('phablet'){
+      //right:-85px;
+    }
     a {
       font-size: 12px;
       font-weight: 900;
@@ -24,8 +29,9 @@
   }
 }
 .w100-375 {
-  width: calc(100% - 750px);
+  //width: calc(100% - 750px);
   //border:1px solid;
+  width: 100%;
   margin: 0 auto;
   padding:0;
   position: relative;

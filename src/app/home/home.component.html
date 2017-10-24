@@ -1,153 +1,157 @@
-<div class="home-page">
-  <div class="row banner">
-    <div class="row w100-375">
-      <h2 class="titleEvent">{{titleEvent}}</h2><br>
-      <span class="subTitleEvent">
+<div class="containerHomePage">
+  <div class="home-page">
+    <div class="row banner">
+      <div class="row w100-375">
+        <h2 class="titleEvent">{{titleEvent}}</h2><br>
+        <span class="subTitleEvent">
       <i class="fa fa-television iconEvent texto-celeste" aria-hidden="true"></i>
       <h6 class="contentEvent texto-celeste">{{typeEvent}}</h6>
     </span>
-    </div>
-  </div>
-</div>
-<div class="containerBuyEvent">
-  <div class="card" style="width: 20rem;">
-    <img class="card-img-top picEvent" src="./../../assets/img/vinosSinganis.png" alt="Card image cap">
-    <div class="card-body">
-      <button type="button" class="btn btn-warning btn-lg btn-block btn-buy-float fondo-lila">{{textBuyTickets}}</button>
-    </div>
-  </div>
-  <div class="containerBtnBuy">
-    <div class="row">
-      <div class="{{classOrganizador}}" [hidden]="!organizadoBool">
-        <button type="button" class="btn btn-info btn-lg btn-block btn-organization fondo-plomo-claro texto-gris">
-          {{textOrganization}} : <br /> Campo Ferial Chuquiago Marka <br /> Campo Ferial Chuquiago Marka
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class={{classLugar}} [hidden]="!lugarBool">
-        <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
-          {{textUbication}} <br />
-          <i class="fa fa-map-o texto-centro" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class={{classButacas}} [hidden]="!butacasBool">
-        <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
-          {{textButacas}} <br />
-          <i class="fa fa-wheelchair texto-centro" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class={{classBrochure}} [hidden]="!brochureBool">
-        <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
-          {{textBrochure}}<br />
-          <i class="fa fa-file-o" aria-hidden="true"></i>
-        </button>
       </div>
     </div>
   </div>
-</div>
-<div class="dataEvents fondo-blanco">
-  <div class="row w100-375">
-    <div class="col-8 containerDetailEvent">
-      <div class="col-4 detailEvent">
-        <span><i class="fa fa-calendar texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{dateEvent}}</h6></span>
-      </div>
-      <div class="col-3 detailEvent">
-        <span><i class="fa fa-clock-o texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{hourEvent}}</h6></span>
-      </div>
-      <div class="col-3 detailEvent">
-        <span><i class="fa fa-ticket texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{pricingEvent}}</h6></span>
+  <div class="containerBuyEvent">
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top picEvent" src="./../../assets/img/vinosSinganis.png" alt="Card image cap">
+      <div class="card-body">
+        <button type="button" class="btn btn-warning btn-lg btn-block btn-buy-float fondo-lila">{{textBuyTickets}}</button>
       </div>
     </div>
-    <div class="col-4"></div>
+    <div class="containerBtnBuy">
+      <div class="row">
+        <div class="{{classOrganizador}}" [hidden]="!organizadoBool">
+          <div class="btn btn-info btn-lg btn-block btn-organization fondo-plomo-claro texto-gris">
+              {{textOrganization}} : <br /> Campo Ferial Chuquiago Marka <br />Campo Ferial Chuquiago Marka
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class={{classLugar}} [hidden]="!lugarBool">
+          <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
+            <span>{{textUbication}} </span><br />
+            <i class="fa fa-map-o texto-centro d-block texto-celeste" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class={{classButacas}} [hidden]="!butacasBool">
+          <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
+            <span>{{textButacas}}</span><br />
+            <i class="fa fa-wheelchair texto-centro d-block texto-celeste" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class={{classBrochure}} [hidden]="!brochureBool">
+          <button type="button" class="btn btn-info btn-lg btn-block fondo-plomo-claro texto-gris texto-izquierda">
+            <span>{{textBrochure}}</span><br />
+            <i class="fa fa-file-o d-block texto-centro texto-celeste" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="informationEvent fondo-casi-blanco">
-  <div class="row w100-375">
-    <div class="col-7 containerInformation">
-      <h3 class="texto-azul">{{textSectionInfo}}</h3>
-      <p>{{contentInfoA}}</p>
-      <p class="collapse" id="collapseExample">{{contentInfoB}}</p>
-      <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  <div class="dataEvents fondo-blanco">
+    <div class="row w100-375">
+      <div class="col-8 containerDetailEvent">
+        <div class="col-4 detailEvent">
+          <span><i class="fa fa-calendar texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{dateEvent}}</h6></span>
+        </div>
+        <div class="col-3 detailEvent">
+          <span><i class="fa fa-clock-o texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{hourEvent}}</h6></span>
+        </div>
+        <div class="col-3 detailEvent">
+          <span><i class="fa fa-ticket texto-azul" aria-hidden="true"></i><h6 class="texto-lila">{{pricingEvent}}</h6></span>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+  <div class="informationEvent fondo-casi-blanco">
+    <div class="row w100-375">
+      <div class="col-6 containerInformation">
+        <h3 class="texto-azul">{{textSectionInfo}}</h3>
+        <p class="texto-justificado">{{contentInfoA}}</p>
+        <p class="collapse texto-justificado" id="collapseExample">{{contentInfoB}}</p>
+        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <span class="texto-azul seeMore">
           Ver mas
           <i class="fa fa-angle-up texto-celeste" aria-hidden="true"></i>
           <i class="fa fa-angle-down texto-celeste" aria-hidden="true"></i>
         </span>
-      </a>
-      <div class="socialMediaEvents">
-        <a href={{socialFacebook}}>
-          <img src="./../../assets/img/social/facebook.png" alt="">
         </a>
-        <a href={{socialTwitter}}>
-          <img src="./../../assets/img/social/twitter.png" alt="">
-        </a>
-        <a href={{socialInstagram}}>
-          <img src="./../../assets/img/social/instagram.png" alt="">
-        </a>
+        <div class="socialMediaEvents">
+          <a href={{socialFacebook}}>
+            <img src="./../../assets/img/social/facebook.png" alt="">
+          </a>
+          <a href={{socialTwitter}}>
+            <img src="./../../assets/img/social/twitter.png" alt="">
+          </a>
+          <a href={{socialInstagram}}>
+            <img src="./../../assets/img/social/instagram.png" alt="">
+          </a>
+        </div>
       </div>
+      <div class="col-4"></div>
     </div>
-    <div class="col-4"></div>
   </div>
-</div>
-<div class="buyTickets fondo-azul-pastel">
-  <div class="row centrado-vertical ">
-    <div class="row w100-375">
-      <div class="col-12 sp">
-        <h3 class="texto-casi-blanco">{{textSectionBuyTicket}}</h3>
-        <h6 class="texto-casi-blanco">{{subTextSectionBuyTicket}}</h6>
+  <div class="buyTickets fondo-azul-pastel">
+    <div class="row centrado-vertical ">
+      <div class="row w100-375">
+        <div class="col-12 sp">
+          <h3 class="texto-casi-blanco">{{textSectionBuyTicket}}</h3>
+          <h6 class="texto-casi-blanco">{{subTextSectionBuyTicket}}</h6>
+        </div>
       </div>
-    </div>
-    <div class="row w100-375 cheightCarousel">
-      <div class="col-6 containerCarousel fondo-casi-blanco">
-        <carousel [dates]="dates" (select)="onSelectDate($event)"></carousel>
-      </div>
-      <div class="col-1"></div>
-      <div class="col-5 fondo-casi-blanco">
-        <h6>Has seleccionado</h6>
-        <div class="containerDetailBuy">
-          <div class="row">
-            <div class="col-5 containerDetailDateEvent text-center">
-              <h2>{{dateSelect.date}}</h2>
-              <h5>{{dateSelect.day}}</h5>
-              <h5>{{dateSelect.hour}}</h5>
-            </div>
-            <div class="col-7 containerDetailBuyEvent">
-              <h6>{{titleEvent}}</h6>
-              <h6>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                {{ubicationEvent}}</h6>
-              <h6>{{pricingEvent}}</h6>
+      <div class="row w100-375 cheightCarousel">
+        <div class="col-6 containerCarousel fondo-casi-blanco">
+          <carousel [dates]="dates" (select)="onSelectDate($event)"></carousel>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 fondo-casi-blanco">
+          <h6>Has seleccionado</h6>
+          <div class="containerDetailBuy">
+            <div class="row">
+              <div class="col-5 containerDetailDateEvent text-center">
+                <h2>{{dateSelect.date}}</h2>
+                <h5>{{dateSelect.day}}</h5>
+                <h5>{{dateSelect.hour}}</h5>
+              </div>
+              <div class="col-7 containerDetailBuyEvent">
+                <h6>{{titleEvent}}</h6>
+                <h6>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  {{ubicationEvent}}</h6>
+                <h6>{{pricingEvent}}</h6>
+              </div>
             </div>
           </div>
-        </div>
-        <button class="btn btn-warning btn-buy">COMPRAR</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="otherEvents">
-  <div  class="row w100-375">
-    <h2 class="titleOtherEvent">QUIZAS TAMBIEN TE PUEDA INTERESAR</h2>
-    <br />
-    <p>Selecione un evento y compre entradas.</p>
-  </div>
-  <div  class="row w100-375">
-    <div class="col-6 otherEvent" *ngFor="let event of listEvents;">
-      <div class="row">
-        <div class="col-7 picEventOther">
-          <img class="card-img"  src="{{event.pic}}">
-        </div>
-        <div class="col-5 detailEventOther">
-          <h6 class="card-title">{{event.name}}</h6>
-          <p><i class="fa fa-map-marker" aria-hidden="true"></i>
-            {{event.locale}}</p>
-          <p><i class="fa fa-calendar" aria-hidden="true"></i>{{event.date}}</p>
-          <span class="text-right">{{event.pricing}}</span>
+          <button class="btn btn-warning btn-buy">COMPRAR</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="otherEvents">
+    <div  class="row w100-375">
+      <h2 class="titleOtherEvent">QUIZAS TAMBIEN TE PUEDA INTERESAR</h2>
+      <br />
+      <p>Selecione un evento y compre entradas.</p>
+    </div>
+    <div  class="row w100-375">
+      <div class="col-6 otherEvent" *ngFor="let event of listEvents;">
+        <div class="row">
+          <div class="col-7 picEventOther">
+            <img class="card-img"  src="{{event.pic}}">
+          </div>
+          <div class="col-5 detailEventOther">
+            <h6 class="card-title">{{event.name}}</h6>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+              {{event.locale}}</p>
+            <p><i class="fa fa-calendar" aria-hidden="true"></i>{{event.date}}</p>
+            <span class="text-right">{{event.pricing}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
